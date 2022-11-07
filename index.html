@@ -16,8 +16,6 @@
     <script src="src/three.js"></script>
     <script>
         // Setup
-        // -----
-
         const scene = new THREE.Scene();
 
         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -29,8 +27,6 @@
         document.body.appendChild(renderer.domElement);
 
         // Content
-        // -------
-
         const geometry = new THREE.IcosahedronGeometry(1, 0);
 
         const material = new THREE.MeshPhysicalMaterial({
@@ -48,9 +44,7 @@
         light.position.set(10, 5, 10);
         scene.add(light);
 
-        // Update
-        // ------
-
+        // Action
         function animate() {
             requestAnimationFrame(animate);
 
